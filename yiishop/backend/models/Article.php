@@ -27,7 +27,6 @@ class Article extends ActiveRecord{
             'status'=>'状态'
         ];
     }
-
     //查询文章分类表的名字,显示到这个文章页面上面来
     public function getArticleCategory()
     {

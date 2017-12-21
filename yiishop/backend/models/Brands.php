@@ -9,12 +9,22 @@ namespace backend\models;
 use yii\db\ActiveRecord;
 
 class Brands extends ActiveRecord{
-    public $img;
     public function rules()
     {
         return [
-            [['name','intro','img','status'],'required'],
+            [['name','intro','logo','status'],'required'],
             [['sort'],'number'],
+        ];
+    }
+
+    public function attributeLabels()
+    {
+        return[
+           'name'=>'名称',
+           'intro'=>'简介',
+           'logo'=>'LOGO',
+           'sort'=>'排序',
+           'status'=>'状态'
         ];
     }
 }

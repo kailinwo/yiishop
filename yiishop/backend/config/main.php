@@ -17,15 +17,15 @@ return [
         'request' => [
             'csrfParam' => '_csrf-backend',
         ],
-        'assetManager'=>[
-            'bundles'=>[
-                'yii\web\JqueryAsset'=>[
-                    'jsOptions'=>[
-                        'position'=>\yii\web\View::POS_HEAD,
-                    ]
-                ]
-            ]
-        ],
+//        'assetManager'=>[
+//            'bundles'=>[
+//                'yii\web\JqueryAsset'=>[
+//                    'jsOptions'=>[
+//                        'position'=>\yii\web\View::POS_HEAD,
+//                    ]
+//                ]
+//            ]
+//        ],
         'user' => [
             'identityClass' => 'common\models\User',
             'enableAutoLogin' => true,
